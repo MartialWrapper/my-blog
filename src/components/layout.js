@@ -1,6 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import './css/body.css'
+import './css/title.css'
+import './css/footer.css'
+
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
@@ -19,10 +23,11 @@ class Layout extends React.Component {
           }}
         >
           <Link
+            className='Title'
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              backgroundColor: '#ffdc6a'
             }}
             to={`/`}
           >
@@ -32,13 +37,15 @@ class Layout extends React.Component {
       )
     } else {
       header = (
-        <h3
+        <h3 className="Title"
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
+            backgroundColor: '#ffdc6a',
+            maxWidth: '130px'
           }}
         >
-          <Link
+          <Link className="Title"
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
@@ -62,8 +69,8 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer className="Footer">
+          this blog is powered mainly by
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>

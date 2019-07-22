@@ -1,31 +1,18 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
 
-import { rhythm } from "../utils/typography"
+import './css/text.css'
+import './css/lethigh.css'
+
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-        childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
           author
           social {
-            twitter
+            instagram
           }
         }
       }
@@ -37,29 +24,18 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: '15%',
+        backgroundColor: '#ff9ed8',
+        paddingLeft: '5%'
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
-      <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+      <p className="Text">
+        <span className="LetHigh">H</span>ey! My name is <strong>{author}</strong> and I'm from Spain. I hope you really enjoy my blog's entries. Here we go!
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        <br></br>
+        ( <a href={`https://www.instagram.com/${social.instagram}`}>
+          Follow me on Instagram!
+        </a> )
       </p>
     </div>
   )
