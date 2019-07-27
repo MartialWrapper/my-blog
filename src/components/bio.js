@@ -21,23 +21,42 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
+    <React.Fragment>
     <div
       style={{
         display: `flex`,
-        marginBottom: '15%',
-        backgroundColor: '#ff9ed8',
-        paddingLeft: '5%'
+        marginBottom: '5%',
+        flexDirection: 'column'
       }}
     >
+      <h1 className="Title" style={{ maxWidth: '50%', fontSize: '20px', color: 'black', textAlign: 'left'}}>BIOGRAPHY</h1>
       <p className="Text">
-        <span className="LetHigh">H</span>ey! My name is <strong>{author}</strong> and I'm from Spain. I hope you really enjoy my blog's entries. Here we go!
+        My name is <strong>{author}</strong>, aaand ... I'm from a little southern European country: Spain. <br /> I've been so interested in 'tech' since I was a little boy, and now I'm trying to become a self-taught developer, <span className="LetHigh">totally from scratch!</span> <br /> My current stack is: Javascript, ReactJS, Gatsby, GraphQL, and npm.
         {` `}
         <br></br>
-        ( <a href={`https://www.instagram.com/${social.instagram}`}>
+        ( <a className="Text" href={`https://www.instagram.com/${social.instagram}`}>
           Follow me on Instagram!
         </a> )
       </p>
     </div>
+    <div
+      style={{
+        display: `flex`,
+        marginBottom: '5%',
+        flexDirection: 'column'
+      }}
+    >
+      <h1 className="Title" style={{ maxWidth: '50%', fontSize: '20px', color: 'black', textAlign: 'left'}}>BIOGRAPHY</h1>
+      <p className="Text">
+        My name is <strong>{author}</strong>, aaand ... I'm from a little southern European country: Spain. <br /> I've been so interested in 'tech' since I was a little boy, and now I'm trying to become a self-taught developer, <span className="LetHigh">totally from scratch!</span> <br /> My current stack is: Javascript, ReactJS, Gatsby, GraphQL, and npm.
+        {` `}
+        <br></br>
+        ( <a className="Text" href={`https://www.instagram.com/${social.instagram}`}>
+          Follow me on Instagram!
+        </a> )
+      </p>
+    </div>
+    </React.Fragment>
   )
 }
 

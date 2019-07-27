@@ -1,7 +1,8 @@
 module.exports = {
+
   siteMetadata: {
-    title: `alex's blog`,
-    author: `Alex F.`,
+    title: `ALEX'S LOUNGE`,
+    author: `Alex F. Calvo`,
     description: `A blog.`,
     siteUrl: `https://alex-blog.netlify.com/`,
     social: {
@@ -27,6 +28,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-plugin-netlify-cms`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -74,5 +76,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+
   ],
 }

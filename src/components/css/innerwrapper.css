@@ -1,0 +1,9 @@
+.Inner-Wrapper {
+    position: relative;
+}
+
+@media (min-width: 100px) and (max-width: 1053px) { 
+    .Inner-Wrapper {
+        position: relative;
+    }
+}

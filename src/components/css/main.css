@@ -1,0 +1,18 @@
+.Main {
+    display: flex;
+    margin-left: 30%;
+    min-width: 50%;
+    max-width: 50%;
+    flex-direction: column;
+}
+
+@media (min-width: 100px) and (max-width: 1053px) { 
+    .Main {
+        margin-left: 5%;
+        margin-right: 5%;
+        min-width: 90%;
+    }
+    .Main > div {
+        flex-direction: column;
+    }
+}

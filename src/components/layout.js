@@ -4,8 +4,22 @@ import { Link } from "gatsby"
 import './css/body.css'
 import './css/title.css'
 import './css/footer.css'
+import './css/header.css'
+import './css/main.css'
+import './css/noob.css'
+import './css/footerwrapper.css'
+import './css/underline.css'
+import './css/responsivewrapper.css'
+import './css/innerwrapper.css'
+
+
+import Pic from '../../content/assets/pic.jpg'
 
 import { rhythm, scale } from "../utils/typography"
+
+
+
+
 
 class Layout extends React.Component {
   render() {
@@ -17,9 +31,11 @@ class Layout extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
+            ...scale(1),
+            marginRight: 'auto',
+            marginLeft: 'auto',
+            paddingBottom: rhythm(1.5),
+            textAlign: 'center',
           }}
         >
           <Link
@@ -27,7 +43,6 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              backgroundColor: '#ffdc6a'
             }}
             to={`/`}
           >
@@ -38,18 +53,18 @@ class Layout extends React.Component {
     } else {
       header = (
         <h3 className="Title"
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-            backgroundColor: '#ffdc6a',
-            maxWidth: '130px'
-          }}
+        style={{
+          ...scale(1),
+          marginRight: 'auto',
+          marginLeft: 'auto',
+          paddingBottom: rhythm(1.5),
+          textAlign: 'center',
+        }}
         >
           <Link className="Title"
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
             }}
             to={`/`}
           >
@@ -63,18 +78,40 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          minWidth: '100%',
+          maxWidth: '100%',
         }}
       >
-        <header>{header}</header>
-        <main>{children}</main>
+        <div className="Noob">
+        <header className="Header">
+        <div className="Inner-Wrapper">
+        {header}
+        <img alt="A guy" src={Pic} />
+        <div className="ResponsiveWrapper">
+          
+          <ul style={{listStyle: 'none'}}>
+            <li><span style={{fontWeight: '900'}}>Status: </span> In love ...
+            <b> with someone <span role="img" aria-label="xd">🖤</span></b></li>
+            <li><span style={{fontWeight: '900'}}>Gender: </span> Male</li>
+            <li><span style={{fontWeight: '900'}}>Role: </span> <span className="Underline" style={{color: 'white'}}>Frontend Developer</span></li>
+            <li><span style={{fontWeight: '900'}}>Objective: </span> Find a good job</li>
+          </ul>
+        </div>
+        <div className="FooterWrapper">
         <footer className="Footer">
           this blog is powered mainly by
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </div>
+        </div>
+        </div>
+        </header>
+        
+        <main className="Main">{children}</main>
+        </div>
+        
+        </div>
+      
     )
   }
 }
