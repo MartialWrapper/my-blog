@@ -1,7 +1,11 @@
 .Main {
     display: flex;
+<<<<<<< HEAD
     margin-top: 3%;
     margin-left: 33%;
+=======
+    margin-left: 30%;
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
     min-width: 50%;
     max-width: 50%;
     flex-direction: column;
@@ -11,7 +15,10 @@
     .Main {
         margin-left: 5%;
         margin-right: 5%;
+<<<<<<< HEAD
         margin-bottom: 10%;
+=======
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
         min-width: 90%;
     }
     .Main > div {

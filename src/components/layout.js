@@ -1,7 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
 import './css/body.css'
 import './css/title.css'
 import './css/footer.css'
@@ -20,6 +23,11 @@ import { rhythm, scale } from "../utils/typography"
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
@@ -28,6 +36,7 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
+<<<<<<< HEAD
         <h1 className="Title"
           style={{
             ...scale(1),
@@ -36,6 +45,14 @@ class Layout extends React.Component {
             marginLeft: 'auto',
             fontWeight: 'lighter',
             paddingBottom: rhythm(0.5),
+=======
+        <h1
+          style={{
+            ...scale(1),
+            marginRight: 'auto',
+            marginLeft: 'auto',
+            paddingBottom: rhythm(1.5),
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
             textAlign: 'center',
           }}
         >
@@ -56,7 +73,10 @@ class Layout extends React.Component {
         <h3 className="Title"
         style={{
           ...scale(1),
+<<<<<<< HEAD
           color: 'white',
+=======
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
           marginRight: 'auto',
           marginLeft: 'auto',
           paddingBottom: rhythm(1.5),
@@ -88,7 +108,11 @@ class Layout extends React.Component {
         <header className="Header">
         <div className="Inner-Wrapper">
         {header}
+<<<<<<< HEAD
         <img className="ProfilePic" alt="A guy" src={Pic} />
+=======
+        <img alt="A guy" src={Pic} />
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
         <div className="ResponsiveWrapper">
           
           <ul style={{listStyle: 'none'}}>
@@ -96,14 +120,22 @@ class Layout extends React.Component {
             <b> with someone <span role="img" aria-label="xd">🖤</span></b></li>
             <li><span style={{fontWeight: '900'}}>Gender: </span> Male</li>
             <li><span style={{fontWeight: '900'}}>Role: </span> <span className="Underline" style={{color: 'white'}}>Frontend Developer</span></li>
+<<<<<<< HEAD
             <li><span style={{fontWeight: '900'}}>Objective: </span> Find an inclusive workplace</li>
           </ul>
           <ul>
+=======
+            <li><span style={{fontWeight: '900'}}>Objective: </span> Find a good job</li>
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
           </ul>
         </div>
         <div className="FooterWrapper">
         <footer className="Footer">
+<<<<<<< HEAD
           powered with <span role="img" aria-label="xd">💖</span> by
+=======
+          this blog is powered mainly by
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>

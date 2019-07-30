@@ -1,7 +1,11 @@
 module.exports = {
 
   siteMetadata: {
+<<<<<<< HEAD
     title: `Alex's Lounge`,
+=======
+    title: `ALEX'S LOUNGE`,
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
     author: `Alex F. Calvo`,
     description: `A blog.`,
     siteUrl: `https://alex-blog.netlify.com/`,
@@ -59,13 +63,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+<<<<<<< HEAD
         name: `Gatsby Blog`,
+=======
+        name: `Gatsby Starter Blog`,
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+<<<<<<< HEAD
         icon: `content/assets/pic.jpg`,
+=======
+        icon: `content/assets/gatsby-icon.png`,
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
       },
     },
     `gatsby-plugin-offline`,

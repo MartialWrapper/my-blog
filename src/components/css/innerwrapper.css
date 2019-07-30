@@ -1,6 +1,9 @@
 .Inner-Wrapper {
     position: relative;
+<<<<<<< HEAD
     min-height: 100%;
+=======
+>>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
 }
 
 @media (min-width: 100px) and (max-width: 1053px) { 
