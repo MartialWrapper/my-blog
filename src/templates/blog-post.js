@@ -1,16 +1,8 @@
 import React from "react"
-<<<<<<< HEAD
 import { graphql } from "gatsby"
 
 
 
-=======
-import { Link, graphql } from "gatsby"
-
-
-
-import Bio from "../components/bio"
->>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -18,17 +10,11 @@ import '../components/css/title.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
-<<<<<<< HEAD
     const { data } = this.props
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { author } = data.site.siteMetadata
     
-=======
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
->>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
