@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
-=======
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap');
->>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
 
 
 
 .Title {
     text-align: center;
-<<<<<<< HEAD
     min-width: 100%;
     font-size: 25px;
     font-weight: lighter;
@@ -32,26 +27,10 @@
 
 .Post:hover {
     border: 2px solid #a6a6a6;
-=======
-    min-width: 120px;
-    font-size: 20px;
-    font-family: 'Quicksand';
-    color: white;
-}
-
-.Post {
-    max-width: 100%;
-    min-width: 100%;
-    margin-bottom: 3%;
->>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
 }
 
 .Posts-Wrapper {
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD
     margin-bottom: 5%;
-=======
-    margin-bottom: 20%;
->>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
 }

@@ -4,10 +4,7 @@
     margin-top: 20%;
     margin-bottom: 20%;
     text-align: center;
-<<<<<<< HEAD
     justify-content: center;
-=======
->>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
     padding-right: 20%;
     padding-left: 20%;
 }
@@ -17,20 +14,11 @@
         padding: 0;
         min-width: 50%;
         max-width: 100%;
-<<<<<<< HEAD
         margin-top: 10%;
         margin-bottom: 10%;
         text-align: left;
         margin-left: 10%;
         justify-content: center;
         margin-right: 10%;
-=======
-        margin-top: 20%;
-        margin-bottom: 20%;
-        text-align: left;
-        margin-left: auto;
-        justify-content: center;
-        margin-right: auto;
->>>>>>> a1b83efdd6694bd721e2c4fee83fbec5f4853c79
     }
 }
