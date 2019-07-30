@@ -1,0 +1,10 @@
+.Noob {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 100px) and (max-width: 1053px) { 
+    .Noob {
+        flex-direction: column;
+    }
+}

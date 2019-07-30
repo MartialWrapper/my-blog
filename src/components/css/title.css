@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+
+
+
+.Title {
+    text-align: center;
+    min-width: 100%;
+    font-size: 25px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Vollkorn';
+    color: white;
+}
+
+.post-title {
+    font-family: 'Vollkorn';
+}
+
+.Post {
+    font-weight: 100;
+    max-width: 100%;
+    padding: 10px;
+    min-width: 100%;
+    margin-bottom: 3%;
+    border: 2px solid lightgrey;
+}
+
+.Post:hover {
+    border: 2px solid #a6a6a6;
+}
+
+.Posts-Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap');
+
+html {
+    min-height: 100vh;
+}
+
+::selection {
+    background: #D48166;
+}
+
+body {
+    color: black;
+    background: #E6E2DD;
+    min-height: 100vh;
+    font-family: 'Open Sans';
+}
+
+
+a {
+    color: #7a2a9a;
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+a:hover {
+    transition: linear .10s ease-in;
+}
+
+@media (min-width: 100px) and (max-width: 1053px) { 
+    
+}
