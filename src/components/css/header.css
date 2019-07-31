@@ -2,10 +2,11 @@
     position: fixed;
     top: 0;
     bottom: 0;
+    font-size: 11px;
     min-height: 100vh;
-    min-width: 25%;
-    max-width: 25%;
-    background: #D48166;
+    text-transform: uppercase;
+    min-width: 20%;
+    max-width: 20%;
     text-align: center;
 }
 
@@ -16,15 +17,16 @@
     border-radius: 50%;
 }
 
-@media (min-width: 100px) and (max-width: 1053px) { 
+@media (min-width: 100px) and (max-width: 1103px) { 
     .Header {
         position: relative;
         min-height: auto;
         max-width: 100%;
         min-width: 100%;
-        padding-bottom: 7%;
-        margin-bottom: 5%;
+        padding-bottom: 0%;
         border-right: none;
+        margin-bottom: 1%;
+        border-bottom: 1px solid black;
     }
     .ProfilePic {
         z-index: 100;

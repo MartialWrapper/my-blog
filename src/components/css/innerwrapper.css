@@ -1,10 +1,24 @@
 .Inner-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     position: relative;
-    min-height: 100%;
+    margin-bottom: 100%;
+    margin-top: 25%;
+    min-height: 70%;
+    max-height: 70%;
+    border-right: 1px solid black;
 }
 
-@media (min-width: 100px) and (max-width: 1053px) { 
+Small {
+    font-size: 12px;
+}
+
+@media (min-width: 100px) and (max-width: 1103px) { 
     .Inner-Wrapper {
         position: relative;
+        border-right: none;
+        margin-bottom: 2%;
+        margin-top: 2%;
     }
 }

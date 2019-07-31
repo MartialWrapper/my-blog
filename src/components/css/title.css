@@ -3,34 +3,48 @@
 
 
 .Title {
-    text-align: center;
-    min-width: 100%;
+    text-align: left;
+    max-width: 100%;
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: 500;
     text-transform: uppercase;
-    font-family: 'Vollkorn';
-    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    color: black;
+
 }
 
 .post-title {
-    font-family: 'Vollkorn';
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 500;
 }
 
 .Post {
     font-weight: 100;
-    max-width: 100%;
-    padding: 10px;
-    min-width: 100%;
+    max-width: 45%;
+    border: 1px solid black;
+    padding-bottom: 4%;
+    padding-top: 0;
+    padding-left: 3%;
+    min-width: 45%;
     margin-bottom: 3%;
-    border: 2px solid lightgrey;
 }
 
-.Post:hover {
-    border: 2px solid #a6a6a6;
-}
 
 .Posts-Wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+}
+
+.Post:hover {
+    background: none;
+}
+
+@media (min-width: 100px) and (max-width: 1103px) { 
+    .Post {
+        padding-left: 3%;
+        border: none;
+        min-width: 100%;
+        max-width: 100%;
+    }
 }

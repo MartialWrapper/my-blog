@@ -1,13 +1,13 @@
 .Main {
     display: flex;
-    margin-top: 3%;
-    margin-left: 33%;
+    margin-top: 2%;
+    margin-left: 25%;
     min-width: 50%;
     max-width: 50%;
     flex-direction: column;
 }
 
-@media (min-width: 100px) and (max-width: 1053px) { 
+@media (min-width: 100px) and (max-width: 1103px) { 
     .Main {
         margin-left: 5%;
         margin-right: 5%;

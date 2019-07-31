@@ -1,7 +1,7 @@
 module.exports = {
 
   siteMetadata: {
-    title: `Alex's Lounge`,
+    title: `Alex F. Calvo`,
     author: `Alex F. Calvo`,
     description: `A blog.`,
     siteUrl: `https://alex-blog.netlify.com/`,
@@ -47,6 +47,7 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-layout',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

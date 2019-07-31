@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import '../components/css/title.css'
 
 class BlogPostTemplate extends React.Component {
@@ -22,7 +22,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1 className="post-title"
+        <h1 className="Title"
           style={{
             marginTop: rhythm(2),
             marginBottom: '3%',
@@ -32,16 +32,14 @@ class BlogPostTemplate extends React.Component {
         </h1>
         <p
           style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            paddingBottom: '30px',
-            borderBottom: '2px solid #a6a6a6'
+            fontSize: '10px',
+            paddingBottom: '2%',
+            borderBottom: '1px solid black'
           }}
         >
           {post.frontmatter.date + ' by ' + author}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div style={{textTransform: 'uppercase', fontSize: '11px'}}dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
     )
   }

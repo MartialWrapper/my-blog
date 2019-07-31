@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Transition from '../components/transition.js'
 
 import './css/body.css'
 import './css/title.css'
@@ -13,15 +14,9 @@ import './css/responsivewrapper.css'
 import './css/innerwrapper.css'
 
 
-import Pic from '../../content/assets/pic.jpg'
-
-import { rhythm, scale } from "../utils/typography"
-
-
-
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -29,13 +24,10 @@ class Layout extends React.Component {
       header = (
         <h1 className="Title"
           style={{
-            ...scale(1),
-            color: 'white',
-            marginRight: 'auto',
-            marginLeft: 'auto',
-            fontWeight: 'lighter',
-            paddingBottom: rhythm(0.5),
-            textAlign: 'center',
+            color: 'black',
+            marginRight: '10%',
+            marginLeft: '10%',
+            textAlign: 'right',
           }}
         >
           <Link
@@ -46,7 +38,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            {title}
+            <span style={{fontWeight: '900'}}>Alex.</span> <br/> <small style={{fontSize: '9px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>web developer</span> by morning ... </small> <br/> <small style={{fontSize: '9px'}}>... human by night.</small>
           </Link>
         </h1>
       )
@@ -54,22 +46,21 @@ class Layout extends React.Component {
       header = (
         <h3 className="Title"
         style={{
-          ...scale(1),
-          color: 'white',
-          marginRight: 'auto',
-          marginLeft: 'auto',
-          paddingBottom: rhythm(1.5),
-          textAlign: 'center',
+          color: 'black',
+          marginRight: '10%',
+          marginLeft: '10%',
+          textAlign: 'left',
         }}
+      >
+        <Link
+          className='Title'
+          style={{
+            boxShadow: `none`,
+            textDecoration: `none`,
+          }}
+          to={`/`}
         >
-          <Link className="Title"
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-            }}
-            to={`/`}
-          >
-            {title}
+            <span style={{fontWeight: '900'}}>Alex.</span> <br/> <small style={{fontSize: '9px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>web developer</span> by morning ... </small> <br/> <small style={{fontSize: '9px'}}>... human by night.</small>
           </Link>
         </h3>
       )
@@ -87,34 +78,29 @@ class Layout extends React.Component {
         <header className="Header">
         <div className="Inner-Wrapper">
         {header}
-        <img className="ProfilePic" alt="A guy" src={Pic} />
         <div className="ResponsiveWrapper">
-          
-          <ul style={{listStyle: 'none'}}>
-            <li><span style={{fontWeight: '900'}}>Status: </span> In love ...
-            <b> with someone <span role="img" aria-label="xd">🖤</span></b></li>
-            <li><span style={{fontWeight: '900'}}>Gender: </span> Male</li>
-            <li><span style={{fontWeight: '900'}}>Role: </span> <span className="Underline" style={{color: 'white'}}>Frontend Developer</span></li>
-            <li><span style={{fontWeight: '900'}}>Objective: </span> Find an inclusive workplace</li>
-          </ul>
-          <ul>
+          <ul className="List" style={{listStyle: 'none'}}>
+            <li><a href="/" style={{color: 'black'}}>Resumé</a></li>
+            <li><a href="/" style={{color: 'black'}}>E-mail</a></li>
+            <li><a href="/" style={{color: 'black'}}>LinkedIN</a></li>
+            <li><a href="/" style={{color: 'black'}}>Github</a></li>
           </ul>
         </div>
+        
         <div className="FooterWrapper">
-        <footer className="Footer">
-          powered with <span role="img" aria-label="xd">💖</span> by
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+
         </div>
         </div>
         </header>
         
         <main className="Main">{children}</main>
         </div>
-        
+        <footer className="Footer">
+          powered with {'<3'} by
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
         </div>
-      
     )
   }
 }

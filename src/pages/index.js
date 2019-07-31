@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Transition from '../components/transition.js'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import './../components/css/title.css'
 import './../components/css/lethigh.css'
 
@@ -13,32 +13,32 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
-    const { author } = data.site.siteMetadata
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Home" />
         <Bio />
-        <h1 className="Title" style={{color: 'black', maxWidth: '50%', fontSize: '20px', textAlign: 'left'}}><span className="Span-One">PROJECTS</span></h1>
+        <h1 className="Title" style={{color: 'black', maxWidth: '50%', fontSize: '1px', textAlign: 'left'}}><span className="Span-One">PROJECTS</span></h1>
         <div className="Posts-Wrapper">
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
           <Link className="Post" style={{ boxShadow: `none`, color: 'black'}} to={node.fields.slug}>
-            <div style={{marginBottom: '3%', color: 'black', padding: '3%'}} key={node.fields.slug}>
+            <div style={{marginBottom: '3%', color: 'black', paddingTop: '0%'}} key={node.fields.slug}>
               <h3
                 style={{
-                  fontFamily: 'Vollkorn',
-                  marginBottom: rhythm(1 / 4),
-                  marginTop: rhythm(1 / 4),
+                  fontFamily: 'Arial,Helvetica,sans-serif',
+                  fontSize: '12px',
+                  fontWeight: '600',
+                  textTransform: 'uppercase',
                 }}
               >
                 
                   {title}
 
               </h3>
-              <small>By {author}, on {node.frontmatter.date} </small>
-              <p style={{marginTop: '1em', overflow: 'hidden'}}
+              <small style={{fontSize: '10px', textTransform: 'uppercase'}}>{node.frontmatter.date} </small>
+              <p style={{marginTop: '1em', overflow: 'hidden', fontSize: '12px', textTransform: 'uppercase'}}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}

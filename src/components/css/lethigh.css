@@ -6,28 +6,27 @@
 
 .LetHigh2 {
     color: black;
-    background: white;
-    font-weight: 900;
+    font-weight: 600;
     padding: 3px;
 }
 
 .Span-One {
-    font-size: 16px;
-    border-bottom: 5px solid #f7ca18;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
 }
 
 .Wrapper-Mini {
     
-    font-size: 14px;
+    font-size: 12px;
     padding: 10px;
-    color: white;
-    background: #191919;
+    color: black;
+    border: 1px solid black;
     max-width: 70%;
 }
 
 @media (min-width: 100px) and (max-width: 1053px) { 
     .Wrapper-Mini {
-        justify-content: center;
-        margin: 0 auto;
+        justify-content: flex-start;
     }
 }
