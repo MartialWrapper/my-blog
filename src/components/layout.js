@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Transition from '../components/transition.js'
 
 import './css/body.css'
 import './css/title.css'
