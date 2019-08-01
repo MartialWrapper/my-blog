@@ -25,14 +25,14 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginTop: '5%',
-        marginBottom: '5%',
+        marginTop: '9%',
+        marginBottom: '0%',
         flexDirection: 'column'
       }}
     >
       <h1 className="Title" style={{maxWidth: '50%', fontWeight: '600', fontSize: '10px', color: 'black', textAlign: 'left'}}><span className="Span-One">Who Am I? What do I know?</span></h1>
       <p className="Text">
-        My name is <strong>{author}</strong>, aaand ... I'm from a little -- but not that small -- southern European country. Guess which one ;-): Spain. <br /> I've been so interested in 'tech' since I was a little boy, and now I'm trying to become a self-taught developer, <span className="LetHigh">totally from scratch!</span> <br /> <br /> <div className="Wrapper-Mini"><span className="LetHigh2">My current stack is:</span> Javascript, ReactJS, Gatsby, GraphQL, and npm. </div>
+        My name is <strong>{author}</strong>, a junior <b style={{fontSize: '14px'}}>front-end developer</b>, aaand ... I'm from a little -- but not that small -- southern European country. Guess which one ;-): Spain. <br /> I've been so interested in 'tech' since I was a little boy, and now I'm trying to become a self-taught developer and it's so amazing, <span className="LetHigh">isn't it!?</span> <br /> <br /> <div className="Wrapper-Mini"><span className="LetHigh2">My current stack is:</span> Javascript, ReactJS, Gatsby, GraphQL, and npm. </div>
         {` `}
         <br />
         <br></br>

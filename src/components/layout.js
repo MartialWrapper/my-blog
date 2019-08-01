@@ -37,7 +37,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            <span style={{fontWeight: '900'}}>Alex.</span> <br/> <small style={{fontSize: '9px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>web developer</span> by morning ... </small> <br/> <small style={{fontSize: '9px'}}>... human by night.</small>
+            <span style={{fontWeight: '900'}}>Alex.</span> <br/> <small style={{fontSize: '9px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small> <br/> <small style={{fontSize: '9px'}}>... human by night.</small>
           </Link>
         </h1>
       )
@@ -59,7 +59,7 @@ class Layout extends React.Component {
           }}
           to={`/`}
         >
-            <span style={{fontWeight: '900'}}>Alex.</span> <br/> <small style={{fontSize: '9px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>web developer</span> by morning ... </small> <br/> <small style={{fontSize: '9px'}}>... human by night.</small>
+            <span style={{fontWeight: '900'}}>Alex.</span> <br/> <small style={{fontSize: '9px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small> <br/> <small style={{fontSize: '9px'}}>... human by night.</small>
           </Link>
         </h3>
       )
@@ -107,20 +107,16 @@ class Layout extends React.Component {
             />
           </ul>
         </div>
-        
-        <div className="FooterWrapper">
-
-        </div>
         </div>
         </header>
         
-        <main className="Main">{children}</main>
-        </div>
+        <main className="Main">
+        {children}        
         <footer className="Footer">
-          powered with {'<3'} by
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          2019 &copy; ALL RIGHTS RESERVED
         </footer>
+        </main>
+        </div>
         </div>
     )
   }

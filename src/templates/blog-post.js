@@ -23,7 +23,7 @@ class BlogPostTemplate extends React.Component {
         />
         <h1 className="Title"
           style={{
-            marginTop: rhythm(3.5),
+            marginTop: rhythm(4.7),
             marginBottom: '3%',
           }}
         >

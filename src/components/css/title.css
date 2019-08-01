@@ -42,8 +42,6 @@
 
 @media (min-width: 100px) and (max-width: 1103px) { 
     .Post {
-        padding-left: 3%;
-        border: none;
         min-width: 100%;
         max-width: 100%;
     }

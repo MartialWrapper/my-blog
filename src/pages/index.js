@@ -36,7 +36,7 @@ class BlogIndex extends React.Component {
                   {title}
 
               </h3>
-              <small style={{fontSize: '10px', textTransform: 'uppercase'}}>{node.frontmatter.date} </small>
+              <small style={{fontSize: '11px', textTransform: 'uppercase'}}>{node.frontmatter.date} </small>
               <p style={{marginTop: '1em', overflow: 'hidden', fontSize: '12px', textTransform: 'uppercase'}}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
