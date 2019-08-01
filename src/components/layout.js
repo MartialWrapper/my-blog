@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 
 import './css/body.css'
 import './css/title.css'
@@ -79,10 +79,32 @@ class Layout extends React.Component {
         {header}
         <div className="ResponsiveWrapper">
           <ul className="List" style={{listStyle: 'none'}}>
-            <li><a href="/" style={{color: 'black'}}>Resumé</a></li>
-            <li><a href="/" style={{color: 'black'}}>E-mail</a></li>
-            <li><a href="/" style={{color: 'black'}}>LinkedIN</a></li>
-            <li><a href="/" style={{color: 'black'}}>Github</a></li>
+            <StaticQuery
+            query={
+              graphql`
+              query LayoutQuery {
+                site {
+                  siteMetadata {
+                    title
+                    author
+                    social {
+                      github
+                      linkedin
+                      email
+                    }
+                  }
+                }
+              }
+            `}
+            render={data => (
+              <div className="Inner_Wrapperr">
+                <li><a href="/" style={{color: 'black'}}>Resumé</a></li>
+                <li><a href={data.site.siteMetadata.social.email} style={{color: 'black'}}>E-mail</a></li>
+                <li><a href={data.site.siteMetadata.social.linkedin} style={{color: 'black'}}>LinkedIN</a></li>
+                <li><a href={data.site.siteMetadata.social.github} style={{color: 'black'}}>Github</a></li>
+              </div>
+            )}
+            />
           </ul>
         </div>
         
@@ -105,3 +127,19 @@ class Layout extends React.Component {
 }
 
 export default Layout
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        author
+        social {
+          github
+          linkedin
+          email
+        }
+      }
+    }
+  }
+`

@@ -6,6 +6,9 @@ module.exports = {
     description: `A blog.`,
     siteUrl: `https://alex-blog.netlify.com/`,
     social: {
+      github: `https://github.com/MartialWrapper`,
+      email: `mailto:afc1601@gmail.com`,
+      linkedin: `https://www.linkedin.com/in/alexf01/`,
       instagram: `lexeydev`,
     },
   },

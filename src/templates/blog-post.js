@@ -14,7 +14,6 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { author } = data.site.siteMetadata
-    
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -24,7 +23,7 @@ class BlogPostTemplate extends React.Component {
         />
         <h1 className="Title"
           style={{
-            marginTop: rhythm(3),
+            marginTop: rhythm(3.5),
             marginBottom: '3%',
           }}
         >

@@ -3,7 +3,7 @@
     flex-direction: row;
 }
 
-@media (min-width: 100px) and (max-width: 1053px) { 
+@media (min-width: 100px) and (max-width: 1103px) { 
     .Noob {
         flex-direction: column;
     }
