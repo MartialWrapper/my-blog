@@ -4,8 +4,8 @@
     margin-top: 30%;
     margin-bottom: 35%;
     padding-top: 10%;
-    text-align: left;
-    justify-content: center;
+    text-align: right;
+    justify-content: flex-end;
     padding-right: 10%;
     padding-left: 10%;
 }

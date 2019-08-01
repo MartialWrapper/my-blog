@@ -24,8 +24,8 @@ class Layout extends React.Component {
         <h1 className="Title"
           style={{
             color: 'black',
-            marginRight: '10%',
-            marginLeft: '10%',
+            paddingRight: '10%',
+            marginLeft: '5%',
             textAlign: 'right',
           }}
         >
@@ -48,7 +48,7 @@ class Layout extends React.Component {
           color: 'black',
           marginRight: '10%',
           marginLeft: '10%',
-          textAlign: 'left',
+          textAlign: 'right',
         }}
       >
         <Link
