@@ -36,8 +36,10 @@
     margin-bottom: 1%;
 }
 
-.Post:hover {
+.Post:hover {    
+    transition: all 0.2s ease-in-out;
     background: none;
+    background: #fcba03;
 }
 
 @media (min-width: 100px) and (max-width: 1103px) { 

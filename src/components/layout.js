@@ -37,7 +37,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            <span style={{fontWeight: '900'}}>Alex.</span> <br/> <small style={{fontSize: '9px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small> <br/> <small style={{fontSize: '9px'}}>... human by night.</small>
+            <span style={{fontWeight: '900'}}>Alex.</span><br/><small style={{fontSize: '10px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small> <br/> <small style={{fontSize: '10px'}}>... human by night.</small>
           </Link>
         </h1>
       )
@@ -59,7 +59,7 @@ class Layout extends React.Component {
           }}
           to={`/`}
         >
-            <span style={{fontWeight: '900'}}>Alex.</span> <br/> <small style={{fontSize: '9px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small> <br/> <small style={{fontSize: '9px'}}>... human by night.</small>
+           <span style={{fontWeight: '900'}}>Alex.</span><br/><small style={{fontSize: '10px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small> <br/> <small style={{fontSize: '10px'}}>... human by night.</small>
           </Link>
         </h3>
       )
@@ -109,7 +109,7 @@ class Layout extends React.Component {
         </div>
         </div>
         </header>
-        
+
         <main className="Main">
         {children}        
         <footer className="Footer">

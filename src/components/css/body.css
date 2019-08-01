@@ -18,11 +18,12 @@ a {
     font-weight: 600;
     text-decoration: none;
     box-shadow: none;
+    transition: all 0.7s ease-in-out;
 }
 
 a:hover {
     background: #fcba03;
-    transition: linear .10s ease-in;
+    transition: linear .90s ease-in;
 }
 
 @media (min-width: 100px) and (max-width: 1053px) { 
