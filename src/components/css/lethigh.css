@@ -23,12 +23,11 @@
     padding-left: 2%;
     color: black;
     border-left: 4px solid black;
-    min-width: 40%;
-    max-width: 40%;
+    min-width: 100%;
 }
 
 @media (min-width: 100px) and (max-width: 1053px) { 
     .Wrapper-Mini {
-        justify-content: center;
+        min-width: 100%;
     }
 }
