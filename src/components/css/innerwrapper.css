@@ -22,3 +22,12 @@ Small {
         margin-top: 2%;
     }
 }
+
+
+@media (min-width: 100px) and (max-width: 500px) { 
+    .Inner-Wrapper {
+        margin-top: 20%;
+        display: flex;
+        margin-bottom: 70%;
+    }
+}

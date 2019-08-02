@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 
+
 import './css/body.css'
 import './css/title.css'
 import './css/footer.css'
@@ -12,6 +13,7 @@ import './css/underline.css'
 import './css/responsivewrapper.css'
 import './css/innerwrapper.css'
 
+import pdf from './updated_cv.pdf'
 
 class Layout extends React.Component {
   render() {
@@ -21,29 +23,28 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1 className="Title"
+        <h1 className="Title2"
           style={{
             color: 'black',
             paddingRight: '10%',
             marginLeft: '5%',
-            textAlign: 'right',
           }}
         >
           <Link
-            className='Title'
+            className='Title2'
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
             }}
             to={`/`}
           >
-            <span style={{fontWeight: '900'}}>Alex.</span><br/><small style={{fontSize: '10px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small> <br/> <small style={{fontSize: '10px'}}>... human by night.</small>
+           <div className="line_height-wrapper"><span style={{fontWeight: '900'}}>Alex.</span><br/><small style={{fontSize: '10px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small><br/><small style={{fontSize: '10px'}}>... human by night.</small></div>
           </Link>
         </h1>
       )
     } else {
       header = (
-        <h3 className="Title"
+        <h3 className="Title2"
         style={{
           color: 'black',
           marginRight: '10%',
@@ -52,14 +53,14 @@ class Layout extends React.Component {
         }}
       >
         <Link
-          className='Title'
+          className='Title2'
           style={{
             boxShadow: `none`,
             textDecoration: `none`,
           }}
           to={`/`}
         >
-           <span style={{fontWeight: '900'}}>Alex.</span><br/><small style={{fontSize: '10px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small> <br/> <small style={{fontSize: '10px'}}>... human by night.</small>
+           <div className="line_height-wrapper"><span style={{fontWeight: '900'}}>Alex.</span><br/><small style={{fontSize: '10px'}}><span style={{fontSize: '12px', fontWeight: '600'}}>developer</span> by morning ... </small><br/><small style={{fontSize: '10px'}}>... human by night.</small></div>
           </Link>
         </h3>
       )
@@ -97,11 +98,11 @@ class Layout extends React.Component {
               }
             `}
             render={data => (
-              <div className="Inner_Wrapperr">
-                <li><a href="/" style={{color: 'black'}}>Resumé</a></li>
-                <li><a href={data.site.siteMetadata.social.email} style={{color: 'black'}}>E-mail</a></li>
-                <li><a href={data.site.siteMetadata.social.linkedin} style={{color: 'black'}}>LinkedIN</a></li>
-                <li><a href={data.site.siteMetadata.social.github} style={{color: 'black'}}>Github</a></li>
+              <div className="Inner_Wrapperr" >
+                <li><a href={pdf} target="_blank" style={{color: 'black'}}>Resumé.</a></li>
+                <li><a href={data.site.siteMetadata.social.email} style={{color: 'black'}}>E-mail.</a></li>
+                <li><a href={data.site.siteMetadata.social.linkedin} style={{color: 'black'}}>LinkedIN.</a></li>
+                <li><a href={data.site.siteMetadata.social.github} style={{color: 'black'}}>Github.</a></li>
               </div>
             )}
             />
