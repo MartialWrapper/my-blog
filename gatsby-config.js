@@ -62,13 +62,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Blog`,
-        short_name: `GatsbyJS`,
+        name: `My Gatsby Blog`,
+        short_name: `GatsbyJSfromAlex`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#dddfd4`,
         display: `minimal-ui`,
-        icon: ``,
+        icon: `content/assets/pic.jpg`,
       },
     },
     `gatsby-plugin-offline`,
