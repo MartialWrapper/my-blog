@@ -23,7 +23,7 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
           <Link className="Post" style={{ boxShadow: `none`, color: 'black'}} to={node.fields.slug}>
-            <div style={{marginBottom: '3%', color: 'black', paddingTop: '0%'}} key={node.fields.slug}>
+            <div style={{marginBottom: '3%', color: 'black'}} key={node.fields.slug}>
               <h3
                 style={{
                   fontFamily: 'Arial,Helvetica,sans-serif',
@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
 
               </h3>
               <small style={{fontSize: '11px', fontWeight: '600', textTransform: 'uppercase'}}>{node.frontmatter.date} </small>
-              <p style={{marginTop: '1em', overflow: 'hidden', fontWeight: '600', fontSize: '12px', textTransform: 'uppercase'}}
+              <p style={{marginTop: '1em', overflow: 'hidden', fontWeight: '500', fontSize: '12px'}}
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}

@@ -25,6 +25,7 @@ class BlogPostTemplate extends React.Component {
           style={{
             marginTop: rhythm(4.7),
             marginBottom: '3%',
+            textAlign: 'left',
           }}
         >
           {post.frontmatter.title}
@@ -38,7 +39,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date + ' by ' + author}
         </p>
-        <div style={{textTransform: 'uppercase', fontSize: '11px'}}dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div style={{fontSize: '12px'}}dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
     )
   }
