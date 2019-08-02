@@ -26,6 +26,9 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(4.7),
             marginBottom: '3%',
             textAlign: 'left',
+            fontSize: '17px',
+            alignSelf: 'flex-start',
+            fontWeight: '600'
           }}
         >
           {post.frontmatter.title}
