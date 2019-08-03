@@ -9,13 +9,6 @@
     max-width: 20%;
 }
 
-.ProfilePic {
-    z-index: 100;
-    width: 40%;
-    background: transparent;
-    border-radius: 50%;
-}
-
 @media (min-width: 100px) and (max-width: 1103px) { 
     .Header {
         position: relative;
@@ -26,11 +19,5 @@
         border-right: none;
         margin-bottom: 1%;
         border-bottom: 1px solid black;
-    }
-    .ProfilePic {
-        z-index: 100;
-        width: 35%;
-        background: transparent;
-        border-radius: 50%;
     }
 }

@@ -29,15 +29,17 @@
 }
 
 .Post {
+    display: flex;
     font-weight: 100;
-    max-width: 45%;
     border: 1px solid black;
     padding-bottom: 4%;
     padding-top: 0;
     padding-left: 3%;
     padding-right: 3%;
-    min-width: 45%;
     margin-bottom: 3%;
+    margin-right: 3%;
+    min-width: 40%;
+    flex-grow: 1;
 }
 
 
@@ -46,6 +48,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 1%;
+    max-width: 90%;
+}
+
+.Close-Wrapper {
+    display: flex;
+    margin-bottom: 1%;
+    max-width: 90%;
+    flex-flow: row wrap;
 }
 
 .Post:hover {    
@@ -57,6 +67,10 @@
 
 
 @media (min-width: 100px) and (max-width: 1103px) { 
+    .Close-Wrapper {
+        flex-direction: column;
+        max-width: 100%;
+    }
     .Title {
         line-height: 5vw;
     }

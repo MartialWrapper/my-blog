@@ -2,8 +2,8 @@
     display: flex;
     margin-top: 1%;
     margin-left: 25%;
-    min-width: 50%;
-    max-width: 50%;
+    min-width: 70%;
+    max-width: 70%;
     flex-direction: column;
 }
 
@@ -12,7 +12,8 @@
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 10%;
-        min-width: 90%;
+        min-width: 100%;
+        max-width: 100%;
     }
     .Main > div {
         flex-direction: column;

@@ -19,6 +19,7 @@ class BlogIndex extends React.Component {
         <Bio />
         <h1 className="Title" style={{color: 'black', maxWidth: '50%', fontSize: '1px', textAlign: 'left'}}><span className="Span-One">PROJECTS</span></h1>
         <div className="Posts-Wrapper">
+          <div className="Close-Wrapper">
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -48,6 +49,7 @@ class BlogIndex extends React.Component {
             
           )
         })}
+        </div>
         </div> 
         
       </Layout>

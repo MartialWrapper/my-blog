@@ -13,7 +13,9 @@ import './css/underline.css'
 import './css/responsivewrapper.css'
 import './css/innerwrapper.css'
 
-import pdf from './updated_cv.pdf'
+import pdf from './updated_cv.pdf' // pdf_download
+
+
 
 class Layout extends React.Component {
   render() {
@@ -99,7 +101,7 @@ class Layout extends React.Component {
             `}
             render={data => (
               <div className="Inner_Wrapperr" >
-                <li><a href={pdf} target="_blank" style={{color: 'black'}}>Resumé.</a></li>
+                <li><a href={pdf} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>Resumé.</a></li>
                 <li><a href={data.site.siteMetadata.social.email} style={{color: 'black'}}>E-mail.</a></li>
                 <li><a href={data.site.siteMetadata.social.linkedin} style={{color: 'black'}}>LinkedIN.</a></li>
                 <li><a href={data.site.siteMetadata.social.github} style={{color: 'black'}}>Github.</a></li>
