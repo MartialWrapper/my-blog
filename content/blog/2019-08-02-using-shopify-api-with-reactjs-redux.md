@@ -9,4 +9,6 @@ description: >-
 ---
 This project is going to feature some really cool technologies such as: ReactJS, with some additions like styled-components for a well-organized app styling.
 
-P.S: I'll try to make a quick but well done prototype as soon as I get some clear ideas about the project's structure. From now, I may leave this entry's status as 'WIP'.
+> **P.S:**
+>
+>  I'll try to make a quick but well done prototype as soon as I get some clear ideas about the project's structure. From now, I may leave this entry's status as 'WIP'.
