@@ -11,4 +11,4 @@ This project is going to feature some really cool technologies such as: ReactJS,
 
 
 
-P.S: This side project is being made by my own. I'll update this post after I start messing (in a playful way, for sure) with Socket.IO's API.
+**P.S:** This side project is being made by my own. I'll update this post after I start messing (in a playful way, for sure) with Socket.IO's API.
